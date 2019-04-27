@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BlackJack_V2</string>
+    <string name="blackjack_game">BlackJack Game</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="buy">BUY</string>
+    <string name="add_money">Add Money</string>
+    <string name="your_score">0</string>
+    <string name="dealer_score">0</string>
 </resources>

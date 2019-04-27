@@ -5,4 +5,344 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"/>
+        tools:context=".MainActivity">
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/parentLayout" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+        >
+
+            //App Name
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/blackjack_game"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+        >
+
+            //Bankroll text TV
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bankroll:"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:textSize="20sp"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="10dp"/>
+
+            //Bankroll amount TV
+
+            <TextView
+                    android:id="@+id/Money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            //Dealer Score TV
+            <TextView
+                    android:id="@+id/Dealer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dealer_score"
+                    android:textColor="#ffff00"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            //TVs for dealer cards
+            <ImageSwitcher
+                    android:id="@+id/DealerCard1"
+                    android:layout_width="48.75dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"/>
+
+            <ImageSwitcher
+                    android:id="@+id/DealerCard2"
+                    android:layout_width="48.75dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"/>
+
+            <ImageSwitcher
+                    android:id="@+id/DealerCard3"
+                    android:layout_width="48.75dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"/>
+
+            <ImageSwitcher
+                    android:id="@+id/DealerCard4"
+                    android:layout_width="48.75dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"/>
+
+            <ImageSwitcher
+                    android:id="@+id/DealerCard5"
+                    android:layout_width="48.75dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"/>
+
+            <ImageSwitcher
+                    android:id="@+id/DealerCard6"
+                    android:layout_width="48.75dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            //Player's score TV
+
+            <TextView
+                    android:id="@+id/You"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_score"
+                    android:textColor="#ffff00"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            //TVs for player's cards
+            <ImageSwitcher
+                    android:id="@+id/YourCard1"
+                    android:layout_width="48.75dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"/>
+
+            <ImageSwitcher
+                    android:id="@+id/YourCard2"
+                    android:layout_width="48.75dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"/>
+
+            <ImageSwitcher
+                    android:id="@+id/YourCard3"
+                    android:layout_width="48.75dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"/>
+
+            <ImageSwitcher
+                    android:id="@+id/YourCard4"
+                    android:layout_width="48.75dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"/>
+
+            <ImageSwitcher
+                    android:id="@+id/YourCard5"
+                    android:layout_width="48.75dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"/>
+
+            <ImageSwitcher
+                    android:id="@+id/YourCard6"
+                    android:layout_width="48.75dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+            //Bet amount TV
+            <TextView
+                    android:id="@+id/Bet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffff00"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+            //bet seekbar
+            <SeekBar
+                    android:id="@+id/BetAmount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            //place bet button
+
+            <Button
+                    android:id="@+id/PlaceBet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Place Bet"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+            //hit button
+
+            <Button
+                    android:id="@+id/Hit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:text="Hit"/>
+
+            //stand button
+
+            <Button
+                    android:id="@+id/Stand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:text="Stand"/>
+
+            //surrender button
+            <Button
+                    android:id="@+id/Surrender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:text="Surrender"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            //exit button
+            <Button
+                    android:id="@+id/Exit"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="50"
+                    android:text="Click to Exit"/>
+
+            //game info button
+            <Button
+                    android:id="@+id/Help"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="50"
+                    android:text="Game Info"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:weightSum="4">
+
+            //add money text TV
+            <TextView
+                    android:id="@+id/Buyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/add_money"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+
+            //enter buyin amount edittext
+
+            <EditText
+                    android:id="@+id/EditBuyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:hint="@string/enter_amount"
+                    android:imeOptions="actionDone"
+                    android:inputType="none"
+                    android:onClick="clear"
+                    android:singleLine="true"
+                    android:layout_marginEnd="10dp"
+                    android:autofillHints=""/>
+
+            //button to submit buyin entered
+
+            <Button
+                    android:id="@+id/btnBuyin"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/buy"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
