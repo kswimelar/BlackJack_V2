@@ -11,17 +11,17 @@ import android.widget.ImageView
 class SetBackground : Activity() {
 
 
-    internal var iv1: ImageView
-    internal var iv2: ImageView
-    internal var iv3: ImageView
-    internal var iv4: ImageView
-    internal var iv5: ImageView
-    internal var iv6: ImageView
-    internal var iv7: ImageView
-    internal var iv8: ImageView
-    internal var iv9: ImageView
-    internal var iv10: ImageView
-    internal var iv11: ImageView
+    internal var iv1: ImageView? = null
+    internal var iv2: ImageView? = null
+    internal var iv3: ImageView? = null
+    internal var iv4: ImageView? = null
+    internal var iv5: ImageView? = null
+    internal var iv6: ImageView? = null
+    internal var iv7: ImageView? = null
+    internal var iv8: ImageView? = null
+    internal var iv9: ImageView? = null
+    internal var iv10: ImageView? = null
+    internal var iv11: ImageView? = null
 
 
     /** Called when the activity is first created.  */
